@@ -21,6 +21,11 @@ public class Library {
         this.catalogue.add(book);}
     }
 
+    public Books removeBook(Books book){
+        int index = catalogue.indexOf(book);
+        return this.catalogue.remove(index);
+    }
+
 
 
 

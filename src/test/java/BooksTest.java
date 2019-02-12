@@ -10,13 +10,13 @@ public class BooksTest {
 
     @Before
     public void before(){
-        book = new Books("Philisophical Investigations", "Ludwig Wittgenstein", "Philosophy");
+        book = new Books("Philosophical Investigations", "Ludwig Wittgenstein", "Philosophy");
 
     }
 
     @Test
     public void bookHasTitle(){
-        assertEquals("Philisophical Investigations", book.getTitle());
+        assertEquals("Philosophical Investigations", book.getTitle());
     }
 
     @Test
