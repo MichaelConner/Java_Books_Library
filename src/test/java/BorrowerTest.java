@@ -55,6 +55,14 @@ public class BorrowerTest {
         assertEquals(2, borrower.bookCount());
     }
 
+    @Test
+    public void canBorrowMultipleBooks(){
+        borrower.borrowBook(library, book1);
+        borrower.borrowBook(library, book2);
+        assertEquals(0, library.bookCount());
+        assertEquals(3, borrower.bookCount());
+    }
+
 
 
 
